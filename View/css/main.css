@@ -1,0 +1,736 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&family=Oswald:wght@200&family=Roboto+Mono:ital,wght@0,100;0,200;1,100&display=swap');
+/* CSS Document */
+body{ /* corpo do site */
+	margin: 0px;
+	padding: 0px;
+	background-color: #353745; /* cor do plano de fundo do site */
+}
+ul{
+	list-style:none;
+}
+a{
+	text-decoration:none;
+}
+*{
+	box-sizing:border-box;
+}
+
+/* INICIO ESTILO PRIMEIRA SESSÃO PAGINA INICIAL */
+
+.main{ /* estilo da sessão 1 */
+		height: 50vw; 
+		width: 100vw;
+		background-image: url(../img/figura0.jpg); /* imagem do plano de fundo sessão 1 */
+		background-position: center;
+		background-repeat: no-repeat;
+		background-attachment: fixed; /* efeito para travar a imagem */
+		border: none;
+}
+
+.main-01{
+		margin-top: 20px;
+		margin-left: 20px;
+		height: 40vw; 
+		width: 95vw;
+		background-image: url(../img/figura0.jpg); /* imagem do plano de fundo sessão 1 */
+		background-position: center;
+		background-repeat: no-repeat;
+		border: none;
+}
+
+.main-02{
+		margin-top: 20px;
+		margin-left: 20px;
+		height: 40vw; 
+		width: 95vw;
+		background-image: url(../img/figura0.jpg); /* imagem do plano de fundo sessão 1 */
+		background-position: center;
+		background-repeat: no-repeat;
+		border: none;
+}
+
+.main-03{
+	margin-top: 20px;
+	margin-left: 20px;
+	height: 40vw; 
+	width: 95vw;
+	background-image: url(../img/figura0.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	border: none;
+}
+
+
+.menu-left{
+	display:flex;
+	justify-content: space-between;
+}
+
+
+.menu-left h1{
+	color: black;
+	background-color: #ffffff;
+	padding: 10px;
+	border-radius: 5px;
+	font-size: 25px;
+	margin: 15px 10px;
+	font-family: calibri;
+	font-weight: 600;
+}
+.menu-left h2{
+ margin-right: 5%;
+ font-size: 2rem;
+ font-family: 'Roboto Mono', monospace;
+}
+.sign{
+	margin-left: 3%;
+	margin-bottom: 1%;
+	width:100px;
+	height: 30px;
+	border-radius: 4px;
+	border:2px solid dodgerblue;
+	background-color: white;
+	color:black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: calibri;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.sign-in{
+	width:120px;
+	height: 45px;
+	border-radius: 5px;
+	border:3px solid black;
+	color:black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: calibri;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.sign:hover{
+	background-color: black;
+	color:#FFFFFF;
+	transition: all ease 0.2s;
+}
+
+nav{
+	float: right;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	padding: 12px 60px;
+}
+
+.botao-sair{
+    border: 3px solid red;
+		background-color: transparent;
+		margin-top: 10px;
+    color: var(--main);
+    text-transform: uppercase;
+    padding:  .25rem 1rem;
+    border-radius: 5px;
+    display: none;
+}
+
+.botao-sair:hover{
+	background-color: red;
+	transition: 3s;
+}
+.sign-in:hover{
+	background-color: black;
+	color:#FFFFFF;
+	transition: all ease 0.2s;
+}
+
+
+ 
+.g-heading span{
+	width: 30px;
+	height: 30px;
+	background-color:#4530c3;
+	display: flex;
+	border-radius: 10px;
+}
+
+.g-heading p{
+ 
+	font-weight: bold;
+	font-size: 20px;
+	color: #3d3d3e;
+	margin: 0px 10px;
+	line-height: 25px;
+	
+	
+}
+.g-heading{
+	display: flex;
+	align-items: center;
+}
+.g-details {
+	font-size: 14px;
+	margin: 10px 0px;
+	color: #3d3d3e;
+}
+ 
+ 
+.p-heading,
+.t-heading,
+.s-heading{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+ 
+.p-heading p:nth-child(1),
+.t-heading p:nth-child(1),
+.s-heading p:nth-child(1){
+	font-family:Magmawave Caps ;
+	font-weight: bold;
+	font-size: 25px;
+	color: dodgerblue;
+	width:40%;
+	text-align: center;
+	margin:10px;
+}
+.p-heading p:nth-child(2),
+.t-heading p:nth-child(2),
+.s-heading p:nth-child(2){
+	font-family: myriad pro;
+	font-size: 18px;
+	color:white;
+	margin-top: 0px;
+}
+ 
+.s-heading{
+	margin: 0px 0px 30px 0px;
+}
+.s-box {
+	width: 230px;
+	padding: 20px;
+	background-color: #ffffff;
+	box-shadow: 1px 2px 12px rgba(0,0,0,0.1);
+	display: flex;
+	text-align: center;
+	flex-direction: column;
+	align-items: center;
+	margin:10px 10px;
+	border-radius: 10px;
+}
+.s-icon{
+	width: 135px;
+	height: 125px;
+	border-radius: 10%;
+	background-color: black;
+	margin: 10px;
+	background-size:cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.s-box a{
+	font-family: myriad pro;
+	font-weight: bold;
+	color:black;
+	font-size: 18px;
+	margin: 10px 0px;
+}
+.s-box p{
+	font-family: myriad pro;
+	color:black;
+	font-size: 14px;
+}
+.price-button,
+.service-button{
+	width:140px;
+	height: 35px;
+	border:none;
+	outline:none;
+	border-radius:20px;
+	color:black;
+	border:1px solid dodgerblue;
+}
+.price-button:hover,
+.service-button:hover{
+	color:#ffffff;
+	background-color:dodgerblue;
+	transition: all ease 0.5s;
+	cursor: pointer;
+}
+ 
+.services-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.services{
+	padding-top: 30px;
+}
+
+.fa{ /* estilo das cores da avaliações de produtos sessão 2 */
+	margin-top: 0;
+	margin-bottom: 5px;
+	color: dodgerblue;
+
+}
+ 
+.front-icon{
+	background-image:url(../img/drone\ plull.jpg); /* figura produto numero 1 */
+}
+.back-icon{
+	background-image:url("../img/figura2.jpg"); /* figura produto numero 2 */
+}
+.seo-icon{
+	background-image:url(../img/drone27.jpg); /* figura produto numero 3 */
+}
+.gui-icon{
+	background-image:url("../img/figura4.jpg"); /* figura produto numero 4 */
+}
+
+.front-icon-01{
+	background-image: url(drone-01.jpg);
+}
+
+.front-icon-02{
+	background-image: url(drone+especi.jpg);
+}
+
+.front-icon-03{
+	background-image: url(drone-01.jpg);
+}
+
+.front-icon-04{
+	background-image: url(drone-01.jpg);
+}
+
+.front-icon-11{
+	background-image: url(../img/figura0.jpg);
+}
+
+.front-icon-12{
+	background-image: url(../img/drone25.jpg);
+}
+
+.front-icon-13{
+	background-image: url(../img/drone26.jpg);
+}
+
+.front-icon-14{
+	background-image: url(../img/drone27.jpg);
+}
+
+.front-icon-400{
+	background-image: url(../img/drone\ plu02.jpg);
+}
+
+.seo-icon-400{
+	background-image: url(../img/drone\ plull.jpg);
+}
+
+.back-icon-400{
+	background-image: url(../img/drone\ pluuuu.jpg);
+}
+
+.gui-icon-400{
+	background-image: url(../img/drone\ pul.jpg);
+}
+
+
+.front-icon-001{
+	background-image: url(../img/drone+especi.jpg);
+}
+
+.back-icon-002{
+	background-image: url(../img/drone+espe-04.jpg);
+}
+
+.seo-icon-003{
+	background-image: url(../img/drone+espec-06.jpg);
+}
+
+
+.gui-icon-004{
+	background-image: url(../img/drone+espe-02.jpg);
+}
+
+
+.team-box .fa{ /* icones dos consultores */
+	align-items: center;
+	margin-top: 10px;
+	color: dodgerblue;
+}
+ 
+ 
+ 
+.team-img{
+	width:200px;
+	height: 200px;
+	border-radius: 25%;
+	background-color: white;
+	margin: 15px 5px ;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+ 
+.t-id {
+	font-family: myriad pro;
+	
+	
+}
+.t-id a{
+	font-size: 18px;
+	color:white;
+	font-weight: bold;
+}
+.t-id p{
+	align-items: center;
+	font-size: 14px;
+	color:white;
+	margin: 5px;
+	margin-top: 5px;
+}
+
+.team-box{
+	margin: 0px 30px 30px 0px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 10px;
+	
+}
+.t-box-container{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 20px;
+}
+.t-img1{
+	background-image: url("figura11.png");
+}
+.t-img2{
+	background-image:url("user2.png");
+}
+.t-img3{
+	background-image: url("user2.png")
+}
+.t-img4{
+	background-image: url("user2.png");
+}
+
+
+ 
+.contact{  /* estilo da classe contato sessão consultoria */
+	width:100%;
+	height: 150px;
+	display:flex;
+	flex-direction:column;
+	justify-content: center;
+	align-items: center;
+	border-radius: 5px;
+	background-color: #474b66;
+	font-family: myriad pro;
+}
+.contact h1{ /* estilo do titulo sessão consultoria */
+	color:#FFFFFF;
+	font-size: 26px;
+	margin: 5px;
+ 
+}
+ 
+.contact-btn{ /* estilo do botão sessão consultoria */
+	width: 150px;
+	height: 40px;
+	border-radius: 20px;
+	background-color: #353745;
+	cursor: pointer;
+	border:none;
+	outline: none;
+	color:#ffffff;
+	margin: 10px;
+}
+ 
+.contact-btn:hover{ /* efeito do botão sessão consultoria */
+	background-color: white;
+	color:dodgerblue;
+	transition: all ease 0.2s;
+}
+
+/* INICIO ESTILO SESSÃO DE PLANOS */
+
+.palns{
+	margin: 2% 0px 0px 0px;
+}
+.p-box{
+	width: 280px;
+	height: 310px;
+	border-radius: 10px;
+	box-shadow: 3px 3px 12px white;
+	margin: 30px 15px;
+	font-family: myriad pro;
+	display: flex;
+	flex-direction:column;
+	align-items: center;
+	justify-content: space-evenly;
+	padding: 20px 0px;
+}
+.p-box-conatiner{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.p-box-heading{
+	font-family: myriad pro;
+	font-weight: bold;
+	color: white;
+	font-size:18px;
+}
+.price a{
+	color:dodgerblue;
+	font-size: 25px;
+	font-weight: bold
+}
+.price p{
+	color: white;
+	font-size:14px;
+	margin: 2px;
+	font-weight: bold;
+	
+}
+.price{
+	text-align: center;
+}
+.p-box-details{
+	color: white;
+	font-size:16px;
+	text-align: center;
+	
+}
+ 
+button:active{
+	transform: scale(1.1);
+}
+ 
+ 
+footer{
+	background-color:#353745;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	box-sizing: border-box;
+}
+ 
+.dw-footer ul{
+	font-family: calibri;
+	margin:0px;
+	padding:0px 20px;
+	
+}
+.dw-footer h1{
+	color: dodgerblue;
+	font-size:20px;
+	font-family: calibri;
+}
+.dw-footer ul li a{
+	font-size: 16px;
+	color:white;
+}
+ 
+.dw-footer{
+	display: flex;
+	justify-content:space-between;
+	padding:3% 0px;
+	margin:5px;
+	width:80%;
+	flex-wrap: wrap;
+	
+}
+ 
+.social-icons{
+	display:flex;
+}
+.social-icons a{
+	width: 35px;
+	height:35px;
+	margin:0px 5px;
+	background-color:#424356;
+	box-shadow:2px 2px 12px rgba(0,0,0,0.1);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+ 
+.social-icons i{
+	color:#FFFFFF;
+	font-size: 14px;	
+}
+ 
+.search p{
+	color: white;
+	text-align: center;
+	font-family: calibre;
+	font-size: 20px;
+}
+.copyright{
+	font-family: calibri;
+	font-size:12px;
+	margin:10px;
+	text-align: center;
+	color: #B3B3B3;
+}
+.dw-footer ul li a:hover{
+	color:#9697A0;
+	
+}
+.social-icons a:hover{
+	background-color:dodgerblue;
+	transition: all ease 0.5s;
+}
+ 
+.social-icons a:hover i{
+	color: #424356;
+}
+ 
+@media(max-width:1024px){
+	.search{
+		margin:20px auto;
+		display:flex;
+		align-items: center;
+		width: 100%;
+		justify-content: center;		
+	}
+	.search h1{
+		margin:20px;
+	}
+	.s-box,
+	.p-box{
+		flex-grow:1;
+		margin: 5px;
+	}
+	.s-box:nth-child(4),
+	.p-box:nth-child(4){
+		width: 100%;
+		
+		
+	}
+	
+	.p-box:nth-child(4){
+		height: 250px;
+	}
+	
+}
+	
+@media(max-width:720px){
+	
+	.menu-left a{
+		margin:0px 10px;
+		font-size:14px;		
+	}
+	nav{
+		padding:15px 30px;
+	}
+	.sign-in{
+		height: 30px;
+		width: 80px;
+		font-size: 12px;
+	}
+	.s-box p,
+	.service-button{
+		display:none;
+	}
+	
+	.s-box{
+		flex-direction: row;
+		width: 100%;
+		padding: 5px;
+	}
+	.s-box:hover{
+		transform:scale(1);
+		background-color: skyblue;
+	}
+	.services{
+		background-image: none;
+	}
+	.s-heading p:nth-child(2){
+		color:#9f9e9e;
+	}
+	.s-heading p:nth-child(1){
+		color:#3d3d3e;
+	}
+	.s-icon{
+		height:40px;
+		width: 40px;
+	}
+	.s-box a{
+		font-size:16px;
+		margin: 0px 15px;
+	}
+	
+	.team-img{
+		width: 60px;
+		height: 60px;
+	}
+	.team-box{
+		margin:0px 10px 30px 10px;
+	}
+	.t-id a{
+		font-size: 14px;
+	}
+		.t-id p{
+		font-size: 12px;
+	}
+	.contact{
+		height:150px;
+	}
+	.contact h1{
+		font-size:18px;
+	}
+	.contact button{
+		height: 33px;
+		width: 120px;
+		font-size: 12px;
+	}
+	.p-box{
+		width:80%;
+		margin: 10px;
+		
+	
+	}
+	.p-heading p{
+		width: 80%;
+	}
+	.dw-footer{
+		flex-direction: column;
+		align-items:center;
+		text-align:center;
+		
+	}
+	.dw-footer ul h1{
+		font-size: 25px;
+	}
+	.dw-footer ul li{
+		text-align: center;
+		margin:10px;
+		
+	}
+	.dw-footer ul li a{
+		
+		font-size: 20px;
+	}
+	.f-logo{
+		border: 1px solid #545562;
+	}
+	.search{
+		display: block;
+	}
+}

@@ -1,0 +1,20 @@
+
+body{
+ background-color:  #353745;
+}
+.container{
+  margin-top: 3%;
+}
+
+h1{
+  color: #229c9c;
+}
+
+label{
+  color: white;
+}
+h2{
+  position: absolute;
+  top: 15%;
+  right: 15%;
+}
