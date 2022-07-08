@@ -2,15 +2,15 @@ module.exports = env = {
   local: {
     host: '127.0.0.1',
     port: 3306,
-    user: 'root',
-    password: '1001',
+    user: '',
+    password: '',
     database: 'myapp_test'
   },
   heroku: {
-    host: 'tvcpw8tpu4jvgnnq.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
+    host: process.env.MYSQL_HOST,
     port: 3306,
-    user: 'cmwi9uky0rfgewqa',
-    password: 't6eb3ic498kdpxwp',
-    database: 'enr9h0ni7ktkkybn'
+    user: process.env.MYSQL_USER,
+    password: process.env.MYSQL_PASSWORD,
+    database: process.env.MYSQL_DATABASE
   }
 }
