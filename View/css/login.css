@@ -13,11 +13,9 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-<<<<<<< HEAD
   background-color: #353745;
-=======
   background-color: #229c9c;
->>>>>>> 305fdbe98d9a14b3549db496a4311d18d77387a8
+
 }
 
 .container {
@@ -58,8 +56,6 @@ body{
 }
 
 
-<<<<<<< HEAD
-
 .form-header h1::after {
   content: '';
   display: block;
@@ -70,8 +66,7 @@ body{
   position: absolute;
   border-radius: 10px;
 }
-=======
->>>>>>> 305fdbe98d9a14b3549db496a4311d18d77387a8
+
 .login-button{
   display: flex;
   align-items: center;
@@ -79,11 +74,8 @@ body{
 
 .cadastro-button button{
   border: none;
-<<<<<<< HEAD
-  background-color: #353745;
-=======
+  background-color: black;
   background-color: #229c9c;
->>>>>>> 305fdbe98d9a14b3549db496a4311d18d77387a8
   padding: 0.4rem 1rem;
   border-radius: 5px;
   cursor: pointer;

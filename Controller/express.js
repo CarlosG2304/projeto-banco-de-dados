@@ -19,7 +19,6 @@ async function pegarPlano(id, res) {
 }
 
 
-<<<<<<< HEAD
 app.post('/envio', (req, res) => {
   mail(req.body.email, res)
 })
@@ -29,8 +28,6 @@ app.get('/meusdados/:id', (req, res) => {
   pegarPlano(req.params.id, res)
 })
 
-=======
->>>>>>> 305fdbe98d9a14b3549db496a4311d18d77387a8
 app.get('/meusdados', (req, res) => {
 
   db('usuarios').where('email', '=', req.query.email)

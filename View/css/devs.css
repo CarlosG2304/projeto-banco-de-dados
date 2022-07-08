@@ -1,0 +1,84 @@
+.services-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.services{
+	padding-top: 30px;
+}
+
+.fa{ /* estilo das cores da avaliações de produtos sessão 2 */
+	margin-top: 0;
+	margin-bottom: 5px;
+	color: dodgerblue;
+
+}
+
+.s-box-01 {
+	width: 230px;
+	padding: 20px;
+	background-color: rgb(28, 49, 71);
+	box-shadow: 5px 7px 15px rgba(0,0,0,0.1);
+	display: flex;
+	text-align: center;
+	flex-direction: column;
+	align-items: center;
+	margin:10px 10px;
+	border-radius: 10px;
+}
+.s-icon{
+	width: 175px;
+	height: 170px;
+	border-radius: 10%;
+	background-color: black;
+	margin: 10px;
+	background-size:cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.s-box-01 a{
+	font-family: myriad pro;
+	font-weight: bold;
+	color:black;
+	font-size: 18px;
+	margin: 10px 0px;
+}
+.s-box-01 p{
+	font-family: 'Poppins', sans-serif;
+	color: white;
+	font-size: 14px;
+}
+
+.front-icon-0000{
+	background-image:url(../img/dev-dllacy.jpeg); /* figura produto numero 1 */
+}
+.back-icon-1111{
+	background-image:url("../img/dev-carlos.jpg"); /* figura produto numero 2 */
+}
+.seo-icon-2222{
+	background-image:url(../img/ka.jpeg); /* figura produto numero 3 */
+}
+.gui-icon-3333{
+	background-image:url("../img/dev-iris.jpeg"); /* figura produto numero 4 */
+}
+
+.social-icons-000{
+	display:flex;
+}
+.social-icons-000 a{
+	width: 35px;
+	height:35px;
+	margin:0px 10px;
+	background-color:white;
+	box-shadow:2px 2px 12px rgba(167, 46, 46, 0.1);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    border-radius: 5px;
+}
+ 
+.social-icons-000 i{
+	color: dodgerblue;
+	font-size: 14px;	
+}
