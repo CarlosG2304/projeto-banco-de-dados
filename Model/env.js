@@ -3,7 +3,7 @@ module.exports = env = {
     host: '127.0.0.1',
     port: 3306,
     user: 'root',
-    password: '',
+    password: '1001',
     database: 'myapp_test'
   },
   heroku: {

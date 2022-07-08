@@ -22,18 +22,6 @@ async function pegarPlano(id, res) {
 app.post('/envio', (req, res) => {
   mail(req.body.email, res)
 })
-
-app.get('/meusdados/:id', (req, res) => {
-  console.log(req.params.id)
-  pegarPlano(req.params.id, res)
-})
-
-app.get('/meusdados', (req, res) => {
-
-  db('usuarios').where('email', '=', req.query.email)
-    .then(data => res.send(data[0]))
-})
-
 app.get('/meusdados/verificacao', (req, res) => {
 
   dados = {
@@ -60,6 +48,19 @@ app.get('/meusdados/verificacao', (req, res) => {
 
 
 })
+
+app.get('/meusdados/:id', (req, res) => {
+  console.log(req.params.id)
+  pegarPlano(req.params.id, res)
+})
+
+app.get('/meusdados', (req, res) => {
+
+  db('usuarios').where('email', '=', req.query.email)
+    .then(data => res.send(data[0]))
+})
+
+
 
 app.put('/meusdados', (req, res) => {
 

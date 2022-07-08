@@ -167,17 +167,3 @@ $('#excluir').click(function () {
 
 })
 
-$('#comprovante').click(function () {
-  let janela = window.open('', '', 'width=800, heigth=600')
-  janela.document.write('<html><head>');
-  janela.document.write('<title>Aluno da Falcudade Internacional do Pará</title></head>');
-  janela.document.write('<body>');
-  janela.document.write(`Confirmação de cadastro no curso ${curso} <br>`)
-  janela.document.write(`Nome: ${nome} <br>`)
-  janela.document.write(`CPF: ${cpf} <br>`)
-  janela.document.write(`Email: ${email} <br>`)
-  janela.document.write(`Data de Aniversario: ${dataN} <br>`)
-  janela.document.write('</body> </html>')
-  janela.document.close();
-  janela.print();
-})
