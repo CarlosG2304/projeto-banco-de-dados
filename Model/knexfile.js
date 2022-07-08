@@ -11,11 +11,11 @@ module.exports = {
 
   client: 'mysql2',
   connection: {
-    host: env.local.host,
+    host: env.heroku.host,
     port: 3306,
-    user: env.local.user,
-    password: env.local.password,
-    database: env.local.database
+    user: env.heroku.user,
+    password: env.heroku.password,
+    database: env.heroku.database
 
   },
   pool: {
