@@ -5,13 +5,8 @@ $('form').submit(function (e) {
   const nome = $('#name').val()
   const data = $('#data').val()
   const cpf = $('#cpf').val()
-<<<<<<< HEAD:View/javascripts/formulario.js
   const plano = $('.form-select').val()
   const email = $('#email').val()
-=======
-  const curso = $('.form-select').val()
-  const email = $('#email').val().trim()
->>>>>>> 305fdbe98d9a14b3549db496a4311d18d77387a8:View/javaspripts/formulario.js
   const senha = $('#password').val()
   const confimacaoS = $('#Confirmpassword').val()
 
@@ -60,43 +55,19 @@ $('form').submit(function (e) {
 
       } else {
         salvar()
-<<<<<<< HEAD:View/javascripts/formulario.js
         localStorage.setItem('nome', nome)
-=======
-        localStorage.setItem('nome', nome.split(' ').slice(0, 1).join(' ').trim())
-        localStorage.setItem('email', email)
->>>>>>> 305fdbe98d9a14b3549db496a4311d18d77387a8:View/javaspripts/formulario.js
         swal({
           title: "Sucesso!",
           text: "Cadastro realizado com sucesso!",
           icon: "success",
           buttons: {
-            comprovante: 'Comprovante',
             Ok: 'Ok'
           }
         }).then((value) => {
-          switch (value) {
-            case 'Ok':
-              $('body').fadeOut(2000)
-              setTimeout(function () {
-                window.location.replace("/index.html");
-              }, 2000)
-              break;
-            case 'comprovante':
-              let janela = window.open('', '', 'width=800, heigth=600')
-              janela.document.write('<html><head>');
-              janela.document.write('<title>Aluno da Falcudade Internacional do Pará</title></head>');
-              janela.document.write('<body>');
-              janela.document.write(`Confirmação de cadastro no curso ${curso} <br>`)
-              janela.document.write(`Nome: ${nome} <br>`)
-              janela.document.write(`CPF: ${cpf} <br>`)
-              janela.document.write(`Email: ${email} <br>`)
-              janela.document.write(`Data de Aniversario: ${data} <br>`)
-              janela.document.write('</body> </html>')
-              janela.document.close();
-              janela.print();
-              break;
-          }
+          $('body').fadeOut(2000)
+          setTimeout(function () {
+            window.location.replace("/index.html");
+          }, 2000)
         });
 
 

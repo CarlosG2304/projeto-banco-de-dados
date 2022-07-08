@@ -7,10 +7,10 @@ module.exports = env = {
     database: 'myapp_test'
   },
   heroku: {
-    host: process.env.MYSQL_HOST,
+    host: 'tvcpw8tpu4jvgnnq.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
     port: 3306,
-    user: process.env.MYSQL_USER,
-    password: process.env.MYSQL_PASSWORD,
-    database: process.env.MYSQL_DATABASE
+    user: 'cmwi9uky0rfgewqa',
+    password: 't6eb3ic498kdpxwp',
+    database: 'enr9h0ni7ktkkybn'
   }
 }

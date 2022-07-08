@@ -7,6 +7,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
   <script src="./javascripts/jquery.js"></script>
+
   <title>Drones PGM Cadastro</title>
 </head>
 
@@ -87,7 +88,112 @@
   $('html').hide()
   $('html').fadeIn(3000)
 </script>
-<script src="./javascripts/formulario.js"></script>
+<script>//Requisição feita só para ativar o banco de dados
+  $.ajax({ url: 'formulario', success(data) { } })
+
+  $('form').submit(function (e) {
+    const nome = $('#name').val()
+    const data = $('#data').val()
+    const cpf = $('#cpf').val()
+    const plano = $('.form-select').val()
+    const email = $('#email').val()
+    const senha = $('#password').val()
+    const confimacaoS = $('#Confirmpassword').val()
+
+    let genero
+
+    $('input:radio[name=genero]').each(function () {
+      //Verifica qual está selecionado
+      if ($(this).is(':checked')) genero = $(this).val()
+    })
+
+    $.ajax({
+      url: 'formulario',
+      data: {
+        nome,
+        email
+      },
+      success(data) {
+
+        dado = JSON.parse(data)
+        verificacao(dado)
+
+      },
+      error(e) {
+        console.log('get', e)
+      }
+    })
+
+    function verificacao(dado) {
+
+      let boolean = ((dado['nomeRepetido'] == 'true') || (dado['emailRepetido'] == 'true'))
+
+
+
+
+      if (boolean) {
+
+        swal({
+          title: "Ja cadastrado!",
+          text: "Usuario ja cadastrado",
+          icon: "warning",
+        });
+
+      } else {
+        if (senha !== confimacaoS) {
+          $('.alert').css('display', 'block')
+
+        } else {
+          salvar()
+          localStorage.setItem('nome', nome.split(' ').slice(0, 1).join(' ').trim())
+          localStorage.setItem('email', email)
+          swal({
+            title: "Sucesso!",
+            text: "Cadastro realizado com sucesso!",
+            icon: "success",
+            buttons: {
+              Ok: 'Ok'
+            }
+          }).then((value) => {
+            $('body').fadeOut(2000)
+            setTimeout(function () {
+              window.location.replace("/index.html");
+            }, 2000)
+          });
+
+
+
+        }
+      }
+    }
+    function salvar() {
+      $.ajax({
+        url: 'formulario',
+        method: 'post',
+        data: {
+          nome,
+          data,
+          cpf,
+          genero,
+          plano,
+          email,
+          senha
+        },
+        success(data) {
+
+        },
+        error(e) {
+          console.log('post', e)
+        },
+      })
+    }
+
+    e.preventDefault()
+
+  })
+
+
+</script>
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-2.0.3.min.js"></script>
 <script type="text/javascript" src="//assets.locaweb.com.br/locastyle/2.0.6/javascripts/locastyle.js"></script>
