@@ -7,7 +7,7 @@ exports.up = function (knex) {
 
   knex('plans').insert([{
     nome: 'Plano Vip',
-    valor: 100.90
+    valor: 100.00
   }, {
     nome: 'Plano Top',
     valor: 150.00
